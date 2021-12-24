@@ -16,3 +16,8 @@ export default defineComponent({
   }
 });
 </script>
+<style>
+body,html{
+  background: var(--ion-body-bg-white) !important;
+  }
+</style>

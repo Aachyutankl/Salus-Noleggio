@@ -1,7 +1,7 @@
 <template>
   <ion-page>
     <!-- User -->
-    <!-- <ion-tabs>
+    <ion-tabs>
       <ion-router-outlet></ion-router-outlet>
       <ion-tab-bar slot="bottom">
         <ion-tab-button tab="tab1" href="/tabs/tab1">
@@ -29,10 +29,10 @@
           <ion-label>Setting</ion-label>
         </ion-tab-button>
       </ion-tab-bar>
-    </ion-tabs> -->
+    </ion-tabs>
   
   <!-- Admin -->
-  <ion-tabs>
+  <!-- <ion-tabs>
       <ion-router-outlet></ion-router-outlet>
       <ion-tab-bar slot="bottom">
         <ion-tab-button tab="tab1" href="/tabs/tab1">
@@ -60,13 +60,13 @@
           <ion-label>Setting</ion-label>
         </ion-tab-button>
       </ion-tab-bar>
-    </ion-tabs>
+    </ion-tabs> -->
   </ion-page>
 </template>
 
 <script lang="ts">
-/* import { IonTabBar, IonTabButton, IonTabs, IonLabel, IonIcon, IonPage, IonRouterOutlet } from '@ionic/vue';
-import { homeOutline, documentTextSharp, addCircleSharp, logoWechat, settingsSharp } from 'ionicons/icons'; //User
+import { IonTabBar, IonTabButton, IonTabs, IonLabel, IonIcon, IonPage, IonRouterOutlet } from '@ionic/vue';
+ import { homeOutline, documentTextSharp, addCircleSharp, logoWechat, settingsSharp } from 'ionicons/icons'; //User
  export default {
   name: 'Tabs',
   components: { IonLabel, IonTabs, IonTabBar, IonTabButton, IonIcon, IonPage, IonRouterOutlet },
@@ -79,10 +79,10 @@ import { homeOutline, documentTextSharp, addCircleSharp, logoWechat, settingsSha
        settingsSharp
     }
   }
-}  */
+} 
 
 /* Admin Start */
-import { homeOutline, personCircleOutline, addCircleSharp, logoWechat, settingsSharp } from 'ionicons/icons'; //Admin
+/* import { homeOutline, personCircleOutline, addCircleSharp, logoWechat, settingsSharp } from 'ionicons/icons'; //Admin
 import { IonTabBar, IonTabButton, IonTabs, IonLabel, IonIcon, IonPage, IonRouterOutlet } from '@ionic/vue';
 export default {
   name: 'Tabs',
@@ -96,7 +96,7 @@ export default {
        settingsSharp
     }
   }
-}
+} */
 /* Admin End */
 
 </script>
@@ -136,15 +136,25 @@ ion-card {
 }
 .text-grey{
 color: var(--ion-color-medium);
-    font-size: 14px;
+    font-size: 12px;
+    font-family: 'Spartan-semibold';
 }
 .text-lightred {
   color: var(--ion-color-primary);
-  font-size: 14px;
+  font-size: 12px;
+  font-family: 'Spartan-semibold';
+  padding-bottom: 5px;
+}
+.text-sublightred {
+  color: var(--ion-color-primary);
+  font-size: 10px;
+  font-family: 'Spartan-semibold';
+  padding-bottom: 5px;
 }
 .text-lightgrey {
   --color: var(--ion-color-medium,#ABAEBD);
-  font-size: 12px;
+ font-size: 11px;
+  font-family: 'Spartan-semibold';
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -155,13 +165,12 @@ color: var(--ion-color-medium);
   color: var(--ion-color-secondary);
   font-size: 12px;
 } */
-.text-green {
-  color: var(--ion-color-tertiary);
-  font-size: 12px;
-}
+
 .text-yellow{
   color: var(--ion-color-danger);
-  font-size: 12px;
+  font-size: 11px;
+   font-family: 'Spartan-semibold';
+   padding: 5px 2px;
 }
 .custom-border-top {
   border-top: 1px solid rgb(248 95 99 / 30%);
@@ -175,15 +184,17 @@ color: var(--ion-color-medium);
 
 .plywood-invoice{
       color: var(--ion-color-secondary);
-    font-size: 16px;
+    font-size: 13px;
     padding-bottom: 8px;
+    font-family: 'Spartan-semibold';
 }
 .doc-subtitle{
   --color: var(--ion-color-medium,#767780);
-    font-size: 12px !important;
+    font-size: 10px !important;
     white-space: unset;
     overflow: unset;
     text-overflow: unset;
     text-transform: none;
+    font-family: 'Spartan-semibold';
 }
 </style>

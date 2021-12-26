@@ -6,27 +6,27 @@
       <ExploreContainer name="New request page" />
       <div class="title text-lightred ion-padding ion-text-center">Company</div>
       <div class="productContainer ion-padding">
-        <ion-row class="ion-align-items-center ion-border-bottom">
+        <ion-row class="ion-align-items-center ion-border-bottom py-5">
           <ion-col size="10">
-            <ion-card-title class="text-darkblue">Product 01 | <span>25 Qty</span></ion-card-title>
+            <ion-card-title class="text-darkblue pb-5">Product 01 | <span>25 Qty</span></ion-card-title>
             <ion-card-subtitle class="text-lightgrey">Metal rods of cast iron materials with..</ion-card-subtitle>
           </ion-col>
           <ion-col size="2" class="ion-text-center">
             <ion-icon :icon="removeCircle"></ion-icon>
           </ion-col>
         </ion-row>
-        <ion-row class="ion-align-items-center ion-border-bottom">
+        <ion-row class="ion-align-items-center ion-border-bottom py-5">
           <ion-col size="10">
-            <ion-card-title class="text-darkblue">Product 01 | <span>25 Qty</span></ion-card-title>
+            <ion-card-title class="text-darkblue pb-5">Product 01 | <span>25 Qty</span></ion-card-title>
             <ion-card-subtitle class="text-lightgrey">Metal rods of cast iron materials with..</ion-card-subtitle>
           </ion-col>
           <ion-col size="2" class="ion-text-center">
             <ion-icon :icon="removeCircle"></ion-icon>
           </ion-col>
         </ion-row>
-        <ion-row class="ion-align-items-center ion-border-bottom">
+        <ion-row class="ion-align-items-center ion-border-bottom py-5">
           <ion-col size="10">
-            <ion-card-title class="text-darkblue">Product 01 | <span>25 Qty</span></ion-card-title>
+            <ion-card-title class="text-darkblue pb-5">Product 01 | <span>25 Qty</span></ion-card-title>
             <ion-card-subtitle class="text-lightgrey">Metal rods of cast iron materials with..</ion-card-subtitle>
           </ion-col>
           <ion-col size="2" class="ion-text-center">
@@ -109,13 +109,14 @@ export default {
   width: 60%;
   margin: 0 auto;
 }
-.customPadding {
+/* .customPadding {
   padding: 15px 10px;
-}
+} */
 .text-darkblue span{
   color:var(--ion-color-secondary);
   font-weight: 700;
-    font-size: 14px;
+    font-size: 10px;
+    padding-left:6px;
 }
 /* Admin */
 .productContainer ion-icon{

@@ -76,11 +76,11 @@
 </svg>    
 </div>
 <div class="credentials login-section ion-padding">
-  <ion-row class="userAdmin">
-    <ion-col offset="2" size="4">
+ <ion-row class="userAdmin">
+    <ion-col offset="2" size="4" class="userAdminActive userAdminBorder">
       <span class="user">User</span>
     </ion-col>
-     <ion-col size="4"><span class="admin">Admin</span></ion-col>
+     <ion-col size="4" class="userAdminBorder"><span class="admin">Admin</span></ion-col>
   </ion-row>
     <form h-100>
     <ion-grid h-100>
@@ -90,18 +90,31 @@
             <h3>Sign up</h3>
           </div>
           <div padding>
-               <div class="ion-border ion-padding-vertical">
+            <div class="custom-padding-vertical">
+              <div class="dflex-border">
+              <ion-icon :icon="personCircleOutline" class="commonStyleIcon"></ion-icon>
               <ion-input class="ion-padding-horizontal" name="name" type="text" placeholder="Company" ngModel required></ion-input>
-          </div>
-            <div class="ion-border ion-padding-vertical">
-              <ion-input class="ion-padding-horizontal" name="name" type="text" placeholder="Email id" ngModel required></ion-input>
-          </div>
-          <div class="ion-border ion-padding-vertical">
-              <ion-input class="ion-padding-horizontal" name="password" type="password" placeholder="Password" ngModel required></ion-input>
             </div>
+            </div>
+            
+            <div class="custom-padding-vertical">
+              <div class="dflex-border">
+              <ion-icon :icon="mailOpenOutline" class="commonStyleIcon"></ion-icon>
+              <ion-input class="ion-padding-horizontal" name="name" type="text" placeholder="Email id" ngModel required></ion-input>
+              </div>
+            </div>
+            
+              <div class="custom-padding-vertical">
+<div class="dflex-border">
+              <ion-icon :icon="lockClosedOutline" class="commonStyleIcon"></ion-icon>
+              <ion-input class="ion-padding-horizontal" name="password" type="password" placeholder="Password" ngModel required></ion-input>
+              <ion-icon :icon="eyeOutline" class="commonStyleIcon"></ion-icon>
+            </div>
+              </div>
+            
             <ion-row class="choice">
               <ion-col size="12" class="remember">
-<ion-checkbox class="checkbox-square"></ion-checkbox><span>I agree to the<span class="lightred-text">Terms and Condition</span></span>
+              <ion-checkbox class="checkbox-square"></ion-checkbox><span>I agree to the<span class="lightred-text">Terms and Condition</span></span>
               </ion-col>
             </ion-row>
           </div>
@@ -124,7 +137,15 @@
 
 <script>
 import { IonPage, IonContent } from '@ionic/vue';
+import { personCircleOutline, mailOpenOutline, lockClosedOutline} from 'ionicons/icons'
 export default {
-    components: { IonPage,IonContent}
+    components: { IonPage,IonContent},
+    setup() {
+    return {
+      mailOpenOutline,
+      lockClosedOutline,
+      personCircleOutline
+    };
+  },
 }
 </script>

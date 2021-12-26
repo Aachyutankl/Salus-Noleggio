@@ -14,7 +14,7 @@
         </ion-row>
         <ion-row class="custom-border-top">
           <ion-col size="7">
-            <div class="text-darkblue font-weight">Created on: 14 Oct 2021</div>
+            <div class="text-subdarkblue font-weight">Created on: 14 Oct 2021</div>
           </ion-col>
           <ion-col size="5" class="ion-text-center">
             <div class="text-blue">Download Attachment</div>
@@ -32,7 +32,7 @@
         </ion-row>
         <ion-row class="custom-border-top">
           <ion-col size="7">
-            <div class="text-darkblue font-weight">Created on: 14 Oct 2021</div>
+            <div class="text-subdarkblue font-weight">Created on: 14 Oct 2021</div>
           </ion-col>
           <ion-col size="5" class="ion-text-center">
             <div class="text-blue">Download Attachment</div>
@@ -50,7 +50,7 @@
         </ion-row>
         <ion-row class="custom-border-top">
           <ion-col size="7">
-            <div class="text-darkblue font-weight">Created on: 14 Oct 2021</div>
+            <div class="text-subdarkblue font-weight">Created on: 14 Oct 2021</div>
           </ion-col>
           <ion-col size="5" class="ion-text-center">
             <div class="text-blue">Download Attachment</div>
@@ -68,7 +68,7 @@
         </ion-row>
         <ion-row class="custom-border-top">
           <ion-col size="7">
-            <div class="text-darkblue font-weight">Created on: 14 Oct 2021</div>
+            <div class="text-subdarkblue font-weight">Created on: 14 Oct 2021</div>
           </ion-col>
           <ion-col size="5" class="ion-text-center">
             <div class="text-blue">Download Attachment</div>
@@ -94,15 +94,8 @@ export default {
 };
 </script>
 <style>
-.text-blue {
-  color: #40a6fc;
-  font-size: 12px;
-}
 .font-weight {
   font-weight: 700;
 }
-/* Admin */
-.customPadding {
-  padding: 6px;
-}
+
 </style>

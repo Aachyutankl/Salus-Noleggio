@@ -32,7 +32,7 @@ const routes: Array<RouteRecordRaw> = [
         redirect: '/tabs/tab1'
       },
       /* User component */
-       /* {
+      {
         path: 'tab1',
         component: () => import('@/views/Home.vue')
       },
@@ -51,9 +51,9 @@ const routes: Array<RouteRecordRaw> = [
       {
         path: 'tab5',
         component: () => import('@/views/Settings.vue')
-      }, */
+      }
       /* Admin component */
-       {
+       /* {
         path: 'tab1',
         component: () => import('@/views/AdminHome.vue')
       },
@@ -72,7 +72,7 @@ const routes: Array<RouteRecordRaw> = [
       {
         path: 'tab5',
         component: () => import('@/views/AdminSettings.vue')
-      }
+      } */
     ]
   }
 ]

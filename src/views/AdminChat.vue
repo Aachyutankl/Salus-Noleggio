@@ -4,7 +4,7 @@
       <ExploreContainer name="Chat Page" />
       <!-- Admin page -->
       <div class="attachment ion-padding">
-        <div class="text-lightred ion-padding ion-text-center"><h4 class="ion-no-margin">Company</h4></div>
+        <div class="ion-padding ion-text-center"><h4 class="text-lightred ion-no-margin">Company</h4></div>
         <div class="deliveryContainer ion-padding-bottom ion-margin-bottom">
           <div class="ion-padding deliveryDate ion-text-center">Add attachment</div>
         </div>
@@ -19,15 +19,15 @@
         </ion-row>
         <ion-row class="custom-border-top">
           <ion-col size="7">
-            <div class="text-darkblue font-weight">Created on: 14 Oct 2021</div>
+            <div class="text-subdarkblue font-weight">Created on: 14 Oct 2021</div>
           </ion-col>
           <ion-col size="5" class="ion-text-center">
-            <div class="text-blue">Download &nbsp; | &nbsp;<span class="text-lightred">Delete</span></div>
+            <div class="text-blue">Download &nbsp; | &nbsp;<span class="text-sublightred">Delete</span></div>
           </ion-col>
         </ion-row>
       </ion-card>
       </div>
-      <div class="chatAdminContainer ion-padding">
+      <!-- <div class="chatAdminContainer ion-padding">
         <ion-card>
           <ion-row class="ion-align-items-center">
             <ion-col size="1.5" class="ion-text-center">
@@ -47,16 +47,16 @@
               <div class="redCircle">3</div>
             </ion-col>
             <ion-col size="10.5">
-              <ion-card-title class="text-darkblue">Company 01</ion-card-title>
+              <ion-card-title class="text-darkblue">Company 02</ion-card-title>
               <ion-card-subtitle class="text-lightgrey"
                 >Metal rods of cast iron materials with..</ion-card-subtitle
               >
             </ion-col>
           </ion-row>
         </ion-card>
-      </div>
+      </div> -->
       <!-- Admin page end -->
-      <ion-row>
+      <!-- <ion-row>
         <ion-col size="9">
           <ion-card class="rose-bg">
             <ion-card-subtitle>
@@ -81,9 +81,9 @@
             </ion-card-subtitle>
           </ion-card>
         </ion-col>
-      </ion-row>
+      </ion-row> -->
       <!-- text-box -->
-      <div class="chatTextBox">
+      <!-- <div class="chatTextBox">
         <ion-row class="ion-align-items-center">
           <ion-col size="9.5">
             <ion-input
@@ -100,7 +100,7 @@
             <ion-icon :icon="arrowForward" class="arrowIcon"></ion-icon>
           </ion-col>
         </ion-row>
-      </div>
+      </div> -->
     </ion-content>
   </ion-page>
 </template>
@@ -122,20 +122,11 @@ export default {
 };
 </script>
 <style>
-.text-blue {
-  color: #40a6fc;
-  font-size: 12px;
-}
 .font-weight {
   font-weight: 700;
 }
 .rose-bg {
   background: #f9eaee;
-}
-ion-card-subtitle {
-  --color: var(--ion-color-secondary, #2e345a);
-  font-weight: 100;
-  text-transform: none;
 }
 
 .white-bg {

@@ -84,8 +84,11 @@
           </div>
          <label class="choice">Enter the email address associated with your account</label>
           <div padding>
-               <div class="ion-border ion-padding-vertical">
-              <ion-input class="ion-padding-horizontal" name="name" type="text" placeholder="Enter your email address" ngModel required></ion-input>
+                <div class="custom-padding-vertical">
+              <div class="dflex-border">
+ <ion-icon :icon="mailOpenOutline" class="commonStyleIcon"></ion-icon>
+              <ion-input class="ion-padding-horizontal" name="name" type="text" placeholder="Email id" ngModel required></ion-input>
+              </div>
           </div>
             
           </div>
@@ -107,7 +110,13 @@
 
 <script>
 import { IonPage, IonContent } from '@ionic/vue';
+import {mailOpenOutline} from 'ionicons/icons'
 export default {
-    components: { IonPage,IonContent}
+    components: { IonPage,IonContent},
+     setup() {
+    return {
+      mailOpenOutline
+    };
+  }
 }
 </script>

@@ -13,7 +13,7 @@
             <ion-label>johndoe123@company.com</ion-label>
           </li>
           <li>
-            <div class="d-flex" >
+            <div class="d-flex ion-align-items-center" >
               <ion-icon :icon="notifications"></ion-icon>
               <ion-label>Notification</ion-label>
             </div>
@@ -55,29 +55,3 @@ export default {
   },
 };
 </script>
-<style>
-.listOfMenu li {
-  list-style: none;
-  padding: 16px 0;
-  display: flex;
-  align-items: center;
-  border-bottom: 2px solid rgb(171 174 188 / 50%);
-}
-.listOfMenu li:nth-child(3) {
-display: flex;
-align-items: center;
-justify-content: space-between;
-}
-.listOfMenu li:last-child {
-  border-bottom: none;
-  color: var(--ion-color-primary);
-}
-.listOfMenu li ion-icon {
-  padding: 0px 10px;
-}
-ion-toggle{
-    --handle-height: calc(22px - (2px * 2)) !important;
-    --handle-width: calc(22px - (2px * 2)) !important;
-    height: 22px !important;
-}
-</style>

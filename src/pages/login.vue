@@ -1,16 +1,7 @@
 <template>
     <ion-page>
-        <!-- <ion-header>
-            <ion-toolbar class="common-bg">
-            <ion-title>Login Page</ion-title>
-            </ion-toolbar>
-        </ion-header> -->
         <ion-content class="common-bg">
 <div class="brand-section">
-    <!-- <div class="logo"> <ion-img src="src/images/student.png"></ion-img></div>
-    <div class="title">
-        Salus <br><span>Noleggio</span>
-    </div> -->
     <svg xmlns="http://www.w3.org/2000/svg" width="100.087" height="30.626" viewBox="0 0 100.087 30.626">
   <g id="Raggruppa_73" data-name="Raggruppa 73" transform="translate(-150 -47.144)">
     <g id="Raggruppa_45" data-name="Raggruppa 45" transform="translate(52.659 -481.549)">
@@ -80,10 +71,10 @@
 </div>
 <div class="credentials login-section ion-padding">
   <ion-row class="userAdmin">
-    <ion-col offset="2" size="4" class="userAdminActive userAdminBorder" :class="{ userAdminActive: layout === 'user'}" @click="layout = 'user'">
+    <ion-col offset="2" size="4" class="userAdminActive userAdminBorder">
       <span class="user">User</span>
     </ion-col>
-     <ion-col size="4" class="userAdminBorder" :class="{ userAdminActive: layout === 'admin'}" @click="layout = 'admin'"><span class="admin">Admin</span></ion-col>
+     <ion-col size="4" class="userAdminBorder"><span class="admin">Admin</span></ion-col>
   </ion-row>
     <form>
     <ion-grid>
@@ -93,11 +84,20 @@
             <h3>Login</h3>
           </div>
           <div padding>
-            <div class="ion-border ion-padding-vertical">
+            <div class="custom-padding-vertical">
+              <div class="dflex-border">
+ <ion-icon :icon="mailOpenOutline" class="commonStyleIcon"></ion-icon>
               <ion-input class="ion-padding-horizontal" name="name" type="text" placeholder="Email id" ngModel required></ion-input>
+              </div>
+             
           </div>
-          <div class="ion-border ion-padding-vertical">
+          <div class="custom-padding-vertical">
+            <div class="dflex-border">
+              <ion-icon :icon="lockClosedOutline" class="commonStyleIcon"></ion-icon>
               <ion-input class="ion-padding-horizontal" name="password" type="password" placeholder="Password" ngModel required></ion-input>
+              <ion-icon :icon="eyeOutline" class="commonStyleIcon"></ion-icon>
+            </div>
+              
             </div>
             <ion-row class="choice">
               <ion-col size-sm="6" class="remember">
@@ -116,7 +116,7 @@
             <ion-button class="common-btn" size="large" type="submit" expand="block"><router-link to="/tabs/">Login</router-link></ion-button>
           </div>
           <div class="account grey-text">Don’t have an account?</div>
-          <div class="forgot-password lightred-text"><span class="cursor-pointer"><router-link to="/signup">Sign up now</router-link></span></div>
+          <div class="lightred-text"><span class="cursor-pointer"><router-link to="/signup">Sign up now</router-link></span></div>
         </ion-col>
       </ion-row>
     </ion-grid>
@@ -128,8 +128,21 @@
 
 <script>
 import { IonPage, IonContent} from '@ionic/vue';
+import {mailOpenOutline, lockClosedOutline, eyeOutline} from 'ionicons/icons'
 export default {
     components: { IonPage,IonContent},
-    layout:'user'
+    layout:'user',
+    setup() {
+    return {
+      mailOpenOutline,
+      lockClosedOutline,
+      eyeOutline
+    };
+  }
 }
 </script>
+<style>
+.forgot-password{
+  font-size: 12px !important;
+}
+</style>

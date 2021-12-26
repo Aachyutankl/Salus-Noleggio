@@ -9,7 +9,7 @@
               <div class="redCircle">1</div>
             </ion-col>
             <ion-col size="10.5">
-              <ion-card-title class="text-darkblue">Company 01</ion-card-title>
+              <ion-card-title class="text-darkblue pb-5">Company 01</ion-card-title>
               <ion-card-subtitle class="text-lightgrey"
                 >Metal rods of cast iron materials with..</ion-card-subtitle
               >
@@ -22,7 +22,7 @@
               <div class="redCircle">3</div>
             </ion-col>
             <ion-col size="10.5">
-              <ion-card-title class="text-darkblue">Company 01</ion-card-title>
+              <ion-card-title class="text-darkblue pb-5">Company 01</ion-card-title>
               <ion-card-subtitle class="text-lightgrey"
                 >Metal rods of cast iron materials with..</ion-card-subtitle
               >
@@ -96,20 +96,12 @@ export default {
 };
 </script>
 <style>
-.text-blue {
-  color: #40a6fc;
-  font-size: 12px;
-}
+
 .font-weight {
   font-weight: 700;
 }
 .rose-bg {
   background: #f9eaee;
-}
-ion-card-subtitle {
-  --color: var(--ion-color-secondary, #2e345a);
-  font-weight: 100;
-  text-transform: none;
 }
 
 .white-bg {

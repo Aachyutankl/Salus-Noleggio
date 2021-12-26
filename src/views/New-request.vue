@@ -28,7 +28,7 @@
                       <div class="plywood-invoice">Quantity:</div>
                     </ion-col>
                     <ion-col size="6">
-                      <div class="ion-padding ion-border">400</div>
+                      <div class="ion-padding ion-border price">400</div>
                     </ion-col>
                     <ion-col size="2" class="ion-text-center">
                       <ion-icon :icon="trashOutline"></ion-icon>
@@ -41,15 +41,15 @@
         </div>
       </div>
       <div class="ion-margin ion-border">
-        <ion-row class="text-grey">
-          <ion-col size="10">Add more goods</ion-col>
-          <ion-col size="2" class="ion-text-center"
+        <ion-row class="text-grey ion-align-items-center">
+          <ion-col size="10" class="ion-no-padding">Add more goods</ion-col>
+          <ion-col size="2" class="ion-text-center ion-no-padding"
             ><ion-icon :icon="addCircleOutline"></ion-icon
           ></ion-col>
         </ion-row>
       </div>
       <div class="requestBtn">
-        <div class="redCustomBtn customPadding">Make request</div>
+        <div class="redCustomBtn customAllPadding">Make request</div>
       </div>
     </ion-content>
 
@@ -111,13 +111,15 @@ export default {
   width: 60%;
   margin: 0 auto;
 }
-.customPadding {
-  padding: 15px 10px;
+.price{
+  font-size:14px;
+  color: rgb(171 174 188 / 100%);
 }
 .text-darkblue span{
   color:var(--ion-color-secondary);
   font-weight: 700;
-    font-size: 14px;
+    font-size: 10px;
+    padding-left:6px;
 }
 /* Admin */
 .productContainer ion-icon{

@@ -1,6 +1,6 @@
 <template>
   <ion-page>
-    <ion-content :fullscreen="true">
+    <ion-content :fullscreen="true" class="userHomePage">
       <ExploreContainer name="Home page" />
 
       <ion-card>
@@ -38,7 +38,7 @@
             <div class="text-lightgrey">Request</div>
           </ion-col>
           <ion-col size="3.5" class="ion-text-center">
-            <div class="redCustomBtn customPadding">Request</div>
+            <div class="redCustomBtn customPadding">Reject</div>
           </ion-col>
           <ion-col size="3.5" class="ion-text-center">
             <div class="greenCustomBtn customPadding">Accept</div>
@@ -143,9 +143,6 @@ export default {
 </script>
 <style>
 /* Admin start */
-.customPadding {
-  padding: 6px;
-}
 ion-select{
 width:100%;
 color: #1DBA20;
@@ -155,10 +152,15 @@ ion-select label{
 color: #1DBA20
 }
 .font-size{
-  font-size:26px
+  font-size:22px;
 }
-.p-5{
-padding:5px;
+
+.userHomePage{
+  font-family: 'Spartan-semibold';
+}
+.item.sc-ion-label-ios-h, .item .sc-ion-label-ios-h {
+    color: #1bab1d;
+    font-size: 12px;
 }
 /* Admin end */
 </style>

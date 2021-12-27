@@ -2,8 +2,9 @@
   <ion-page>
     <ion-content :fullscreen="true">
       <ExploreContainer name="Chat Page" />
-      <!-- Admin page -->
-      <div class="attachment ion-padding">
+     
+     <!-- Attachment and invoice content -->
+      <!-- <div class="attachment ion-padding">
         <div class="ion-padding ion-text-center"><h4 class="text-lightred ion-no-margin">Company</h4></div>
         <div class="deliveryContainer ion-padding-bottom ion-margin-bottom">
           <div class="ion-padding deliveryDate ion-text-center">Add attachment</div>
@@ -26,8 +27,10 @@
           </ion-col>
         </ion-row>
       </ion-card>
-      </div>
-      <!-- <div class="chatAdminContainer ion-padding">
+      </div> -->
+
+      <!-- List of chat -->
+      <div class="chatAdminContainer ion-padding">
         <ion-card>
           <ion-row class="ion-align-items-center">
             <ion-col size="1.5" class="ion-text-center">
@@ -54,8 +57,9 @@
             </ion-col>
           </ion-row>
         </ion-card>
-      </div> -->
-      <!-- Admin page end -->
+      </div>
+      
+       <!-- Individual chat -->
       <!-- <ion-row>
         <ion-col size="9">
           <ion-card class="rose-bg">
@@ -82,7 +86,7 @@
           </ion-card>
         </ion-col>
       </ion-row> -->
-      <!-- text-box -->
+      <!-- text area -->
       <!-- <div class="chatTextBox">
         <ion-row class="ion-align-items-center">
           <ion-col size="9.5">

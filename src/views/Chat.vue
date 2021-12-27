@@ -2,6 +2,7 @@
   <ion-page>
     <ion-content :fullscreen="true">
       <ExploreContainer name="Chat Page" />
+      <!-- List of Chat -->
       <div class="chatAdminContainer ion-padding">
         <ion-card>
           <ion-row class="ion-align-items-center">
@@ -30,7 +31,9 @@
           </ion-row>
         </ion-card>
       </div>
-      <ion-row>
+
+      <!-- Individual chat -->
+      <!-- <ion-row>
         <ion-col size="9">
           <ion-card class="rose-bg">
             <ion-card-subtitle>
@@ -55,9 +58,9 @@
             </ion-card-subtitle>
           </ion-card>
         </ion-col>
-      </ion-row>
-      <!-- text-box -->
-      <div class="chatTextBox">
+      </ion-row> -->
+      <!-- text area -->
+      <!-- <div class="chatTextBox">
         <ion-row class="ion-align-items-center">
           <ion-col size="9.5">
             <ion-input
@@ -74,7 +77,7 @@
             <ion-icon :icon="arrowForward" class="arrowIcon"></ion-icon>
           </ion-col>
         </ion-row>
-      </div>
+      </div> -->
     </ion-content>
   </ion-page>
 </template>

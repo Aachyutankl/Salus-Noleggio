@@ -101,7 +101,7 @@
             </div>
             <ion-row class="choice">
               <ion-col size-sm="6" class="remember">
-<ion-checkbox class="checkbox-square"></ion-checkbox><span>Remember me</span>
+                <ion-checkbox class="checkbox-square"></ion-checkbox><span>Remember me</span>
               </ion-col>
                 <ion-col size-sm="6" class="lightred-text forgot-password ion-text-end">
                   <router-link to="/forgot">Forgot password?</router-link>

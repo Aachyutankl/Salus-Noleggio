@@ -4,6 +4,8 @@
     <ion-content :fullscreen="true">
       <ExploreContainer name="Document page" />
       <div class="ion-padding">
+
+        <!-- User tab content -->
         <div class="listOfContainer">
           <div class="userApprovalTab">
             <ion-row class="ion-align-items-center">
@@ -57,7 +59,9 @@
           </ion-row>
         </div>
 
-        <div class="approvalContainer">
+
+<!-- Approval tab content -->
+        <!-- <div class="approvalContainer">
           <ion-card>
             <ion-row class="ion-align-items-center">
               <ion-col size="5">
@@ -84,7 +88,7 @@
               </ion-col>
             </ion-row>
           </ion-card>
-        </div>
+        </div> -->
       </div>
     </ion-content>
   </ion-page>

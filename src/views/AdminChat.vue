@@ -2,109 +2,130 @@
   <ion-page>
     <ion-content :fullscreen="true">
       <ExploreContainer name="Chat Page" />
-     
-     <!-- Attachment and invoice content -->
-      <!-- <div class="attachment ion-padding">
-        <div class="ion-padding ion-text-center"><h4 class="text-lightred ion-no-margin">Company</h4></div>
-        <div class="deliveryContainer ion-padding-bottom ion-margin-bottom">
-          <div class="ion-padding deliveryDate ion-text-center">Add attachment</div>
-        </div>
-        <ion-card>
+      <div class="outerPadding">
+        <!-- Attachment and invoice content -->
+       <!--  <div class="attachment">
+          <div class="ion-padding-bottom ion-padding-horizontal ion-text-center">
+            <h4 class="text-lightred ion-no-margin">Company</h4>
+          </div>
+          <div class="deliveryContainer ion-padding-bottom ion-margin-bottom">
+            <div class="ion-padding deliveryDate ion-text-center">
+              Add attachment
+            </div>
+          </div>
+          <ion-card>
+            <ion-row>
+              <ion-col size="12">
+                <ion-card-title class="plywood-invoice"
+                  >Plywood Invoice</ion-card-title
+                >
+                <ion-card-subtitle class="doc-subtitle"
+                  >Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Praesent eget velit nunc. Aliquam tempus elit sit amet erat
+                  maximus, eu consequat tortor volutpat.</ion-card-subtitle
+                >
+              </ion-col>
+            </ion-row>
+            <ion-row class="custom-border-top">
+              <ion-col size="7">
+                <div class="text-subdarkblue font-weight">
+                  Created on: 14 Oct 2021
+                </div>
+              </ion-col>
+              <ion-col size="5" class="ion-text-center">
+                <div class="text-blue">
+                  Download &nbsp; | &nbsp;<span class="text-sublightred"
+                    >Delete</span
+                  >
+                </div>
+              </ion-col>
+            </ion-row>
+          </ion-card>
+        </div> -->
+
+        <!-- List of chat -->
+        <!-- <div class="chatAdminContainer">
+          <ion-card>
+            <ion-row class="ion-align-items-center">
+              <ion-col size="1.5" class="ion-text-center">
+                <div class="redCircle">1</div>
+              </ion-col>
+              <ion-col size="10.5">
+                <ion-card-title class="text-darkblue chatPaddingbottom"
+                  >Company 01</ion-card-title
+                >
+                <ion-card-subtitle class="text-lightgrey"
+                  >Metal rods of cast iron materials with..</ion-card-subtitle
+                >
+              </ion-col>
+            </ion-row>
+          </ion-card>
+          <ion-card>
+            <ion-row class="ion-align-items-center">
+              <ion-col size="1.5" class="ion-text-center">
+                <div class="redCircle">3</div>
+              </ion-col>
+              <ion-col size="10.5">
+                <ion-card-title class="text-darkblue chatPaddingbottom"
+                  >Company 02</ion-card-title
+                >
+                <ion-card-subtitle class="text-lightgrey"
+                  >Metal rods of cast iron materials with..</ion-card-subtitle
+                >
+              </ion-col>
+            </ion-row>
+          </ion-card>
+        </div> -->
+
+        <!-- Individual chat -->
         <ion-row>
-          <ion-col size="12">
-            <ion-card-title class="plywood-invoice">Plywood Invoice</ion-card-title>
-            <ion-card-subtitle class="doc-subtitle"
-              >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget velit nunc. Aliquam tempus elit sit amet erat maximus, eu consequat tortor volutpat.</ion-card-subtitle
-            >
+          <ion-col size="9">
+            <ion-card class="rose-bg">
+              <ion-card-subtitle>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Praesent eget velit nunc. Aliquam tempus elit sit amet erat
+                maximus, eu consequat tortor volutpat.
+              </ion-card-subtitle>
+            </ion-card>
           </ion-col>
         </ion-row>
-        <ion-row class="custom-border-top">
-          <ion-col size="7">
-            <div class="text-subdarkblue font-weight">Created on: 14 Oct 2021</div>
-          </ion-col>
-          <ion-col size="5" class="ion-text-center">
-            <div class="text-blue">Download &nbsp; | &nbsp;<span class="text-sublightred">Delete</span></div>
+        <div class="dateContainer">
+          <div class="chatDate">Yesterday</div>
+        </div>
+
+        <ion-row>
+          <ion-col offset="3" size="9">
+            <ion-card class="white-bg">
+              <ion-card-subtitle>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Praesent eget velit nunc. Aliquam tempus elit sit amet erat
+                maximus, eu consequat tortor volutpat.
+              </ion-card-subtitle>
+            </ion-card>
           </ion-col>
         </ion-row>
-      </ion-card>
-      </div> -->
-
-      <!-- List of chat -->
-      <div class="chatAdminContainer ion-padding">
-        <ion-card>
-          <ion-row class="ion-align-items-center">
-            <ion-col size="1.5" class="ion-text-center">
-              <div class="redCircle">1</div>
-            </ion-col>
-            <ion-col size="10.5">
-              <ion-card-title class="text-darkblue">Company 01</ion-card-title>
-              <ion-card-subtitle class="text-lightgrey"
-                >Metal rods of cast iron materials with..</ion-card-subtitle
-              >
-            </ion-col>
-          </ion-row>
-        </ion-card>
-        <ion-card>
-          <ion-row class="ion-align-items-center">
-            <ion-col size="1.5" class="ion-text-center">
-              <div class="redCircle">3</div>
-            </ion-col>
-            <ion-col size="10.5">
-              <ion-card-title class="text-darkblue">Company 02</ion-card-title>
-              <ion-card-subtitle class="text-lightgrey"
-                >Metal rods of cast iron materials with..</ion-card-subtitle
-              >
-            </ion-col>
-          </ion-row>
-        </ion-card>
-      </div>
-      
-       <!-- Individual chat -->
-      <!-- <ion-row>
-        <ion-col size="9">
-          <ion-card class="rose-bg">
-            <ion-card-subtitle>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-              eget velit nunc. Aliquam tempus elit sit amet erat maximus, eu
-              consequat tortor volutpat.
-            </ion-card-subtitle>
-          </ion-card>
-        </ion-col>
-      </ion-row>
-      <div class="dateContainer">
-        <div class="chatDate">Yesterday</div>
+        
       </div>
 
-      <ion-row>
-        <ion-col offset="3" size="9">
-          <ion-card class="white-bg">
-            <ion-card-subtitle>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-              eget velit nunc. Aliquam tempus elit sit amet erat maximus, eu
-              consequat tortor volutpat.
-            </ion-card-subtitle>
-          </ion-card>
-        </ion-col>
-      </ion-row> -->
       <!-- text area -->
-      <!-- <div class="chatTextBox">
-        <ion-row class="ion-align-items-center">
-          <ion-col size="9.5">
-            <ion-input
-              class="ion-padding-start"
-              name="name"
-              type="text"
-              placeholder="Type here..."
-            ></ion-input>
-          </ion-col>
-          <ion-col size="1">
-            <ion-icon :icon="attachOutline" class="attachIcon"></ion-icon>
-          </ion-col>
-          <ion-col size="1.5">
-            <ion-icon :icon="arrowForward" class="arrowIcon"></ion-icon>
-          </ion-col>
-        </ion-row>
-      </div> -->
+        <div class="chatTextBox">
+          <ion-row class="ion-align-items-center">
+            <ion-col size="9.5">
+              <ion-input
+                class="ion-padding-start"
+                name="name"
+                type="text"
+                placeholder="Type here..."
+              ></ion-input>
+            </ion-col>
+            <ion-col size="1">
+              <ion-icon :icon="attachOutline" class="attachIcon"></ion-icon>
+            </ion-col>
+            <ion-col size="1.5">
+              <ion-icon :icon="arrowForward" class="arrowIcon"></ion-icon>
+            </ion-col>
+          </ion-row>
+        </div>
     </ion-content>
   </ion-page>
 </template>
@@ -131,6 +152,7 @@ export default {
 }
 .rose-bg {
   background: #f9eaee;
+  margin: 0px 0px 18px 0px;
 }
 
 .white-bg {
@@ -144,7 +166,7 @@ export default {
 }
 .chatDate::before {
   content: "";
-  background: var(--ion-color-medium);
+  background: rgb(171 174 188 / 50%);
   position: absolute;
   width: 30%;
   height: 1px;
@@ -153,7 +175,7 @@ export default {
 }
 .chatDate::after {
   content: "";
-  background: var(--ion-color-medium);
+  background: rgb(171 174 188 / 50%);
   position: absolute;
   width: 30%;
   height: 1px;

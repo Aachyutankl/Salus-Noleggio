@@ -8,7 +8,7 @@
       <div class="productContainer ion-padding">
         <ion-row class="ion-align-items-center ion-border-bottom py-5">
           <ion-col size="10">
-            <ion-card-title class="text-darkblue pb-5">Product 01 | <span>25 Qty</span></ion-card-title>
+            <ion-card-title class="text-darkblue pb-5">Product 01 <span> | 25 Qty</span></ion-card-title>
             <ion-card-subtitle class="text-lightgrey">Metal rods of cast iron materials with..</ion-card-subtitle>
           </ion-col>
           <ion-col size="2" class="ion-text-center">
@@ -17,7 +17,7 @@
         </ion-row>
         <ion-row class="ion-align-items-center ion-border-bottom py-5">
           <ion-col size="10">
-            <ion-card-title class="text-darkblue pb-5">Product 01 | <span>25 Qty</span></ion-card-title>
+            <ion-card-title class="text-darkblue pb-5">Product 01 <span> | 25 Qty</span></ion-card-title>
             <ion-card-subtitle class="text-lightgrey">Metal rods of cast iron materials with..</ion-card-subtitle>
           </ion-col>
           <ion-col size="2" class="ion-text-center">
@@ -26,7 +26,7 @@
         </ion-row>
         <ion-row class="ion-align-items-center ion-border-bottom py-5">
           <ion-col size="10">
-            <ion-card-title class="text-darkblue pb-5">Product 01 | <span>25 Qty</span></ion-card-title>
+            <ion-card-title class="text-darkblue pb-5">Product 01 <span> | 25 Qty</span></ion-card-title>
             <ion-card-subtitle class="text-lightgrey">Metal rods of cast iron materials with..</ion-card-subtitle>
           </ion-col>
           <ion-col size="2" class="ion-text-center">
@@ -50,7 +50,7 @@
         </div>
          <div class="statusBar">
             <ion-row class="ion-justify-content-between ion-align-items-center">
-              <ion-col size="10"><ion-label class="text-darkblue">Current status</ion-label></ion-col>
+              <ion-col size="10"><ion-label class="text-darkblue">Customer status</ion-label></ion-col>
               <ion-col size="2"><ion-toggle checked="false"></ion-toggle></ion-col>
             </ion-row>
           </div>
@@ -104,19 +104,14 @@ export default {
 </script>
 
 <style>
-
-.requestBtn {
-  width: 60%;
-  margin: 0 auto;
-}
 /* .customPadding {
   padding: 15px 10px;
 } */
 .text-darkblue span{
-  color:var(--ion-color-secondary);
-  font-weight: 700;
-    font-size: 10px;
-    padding-left:6px;
+ color: var(--ion-color-secondary);
+    font-weight: 700;
+    font-size: 11px;
+    padding-left: 6px;
 }
 /* Admin */
 .productContainer ion-icon{

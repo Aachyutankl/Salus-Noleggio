@@ -3,6 +3,18 @@
     height: 100%;
 }
 
+.icon-grey {
+    color: #ABAEBC;
+}
+
+.chatPaddingbottom {
+    padding-bottom: 5px;
+}
+
+.ion-border-left {
+    border-left: 1px solid rgb(171 174 189 / 30%);
+}
+
 ion-checkbox::part(container) {
     border-radius: 0 !important;
 }
@@ -12,17 +24,21 @@ html.ios {
 }
 
 .dflex-border {
-    border: 1px solid rgb(171 174 188 / 50%);
+    border: 1px solid rgb(171 174 188 / 35%);
     border-radius: 4px;
     padding: 5px 12px;
     display: flex;
     align-items: center;
 }
 
+.outerPadding {
+    margin: 30px 21px;
+}
+
 .custom-border {
     border: 1px solid rgb(171 174 188 / 50%);
-    border-radius: 4px;
-    padding: 5px 12px;
+    border-radius: 8px;
+    padding: 6px 8px;
 }
 
 .custom-padding-vertical {
@@ -74,6 +90,7 @@ html.ios {
     width: 70%;
     margin: auto;
     font-family: 'Spartan-medium';
+    font-size: 15px;
 }
 
 .userAdminBorder {
@@ -95,6 +112,13 @@ html.ios {
     color: var(--ion-color-medium);
     align-items: center;
     font-family: 'Spartan-medium';
+    text-align: center;
+}
+
+.productContainer {
+    margin: 0px 20px;
+    background: #fff;
+    padding: 10px 10px;
 }
 
 .remember {
@@ -104,14 +128,15 @@ html.ios {
 
 .remember span {
     padding-left: 5px;
+    font-size: 10px;
 }
 
 .checkbox-square {
     --background: none;
     border: 1px solid #ABAEBC;
     border-radius: 2px;
-    width: 22px;
-    height: 22px;
+    width: 18px;
+    height: 18px;
 }
 
 .grey-text {
@@ -134,15 +159,29 @@ html.ios {
 
 .common-btn {
     color: var(--ion-color-secondary-contrast);
-    font-size: 16px;
+    font-size: 15px;
     text-transform: initial;
+    --border-radius: 8px;
+}
+
+.account {
+    color: var(--ion-color-medium);
+    font-size: 11px;
+    font-family: 'Spartan-medium';
+    padding-bottom: 7px;
 }
 
 .text-darkblue {
     color: var(--ion-color-secondary);
-    font-size: 12px;
+    font-size: 13px;
     /*font-weight: bold;
     padding-bottom: 5px;*/
+    font-family: 'Spartan-semibold';
+}
+
+.text-homedarkblue {
+    color: var(--ion-color-secondary);
+    font-size: 10px;
     font-family: 'Spartan-semibold';
 }
 
@@ -154,7 +193,7 @@ html.ios {
 
 .text-blue {
     color: #40a6fc;
-    font-size: 10px;
+    font-size: 9px;
     font-family: 'Spartan-semibold';
 }
 
@@ -163,7 +202,8 @@ ion-checkbox .checkbox-icon {
 }
 
 ion-content {
-    --background: #F8FAFE;
+    /* --background: #F8FAFE; */
+    --background: #f5f9ff;
 }
 
 a {
@@ -190,7 +230,7 @@ a {
 .yellowCircle {
     background: var(--ion-color-danger, #FDBC2E);
     border-radius: 50%;
-    font-size: 10px;
+    font-size: 9px;
     padding: 5px;
     color: #fff;
     width: 20px;
@@ -201,9 +241,9 @@ a {
 }
 
 .redCircle {
-    background: var(--ion-color-primary, #FC5A5F);
+    background: rgb(252 90 95 / 70%);
     border-radius: 50%;
-    font-size: 10px;
+    font-size: 9px;
     padding: 5px;
     color: #fff;
     width: 20px;
@@ -218,7 +258,7 @@ a {
     border: 1px solid var(--ion-color-primary);
     border-radius: 8px;
     width: 100%;
-    font-size: 12px;
+    font-size: 11px;
     padding: 13px;
     font-family: 'Spartan-medium';
 }
@@ -237,7 +277,7 @@ a {
 }
 
 .customPadding {
-    padding: 6px;
+    padding: 8px;
 }
 
 .customAllPadding {
@@ -258,25 +298,25 @@ a {
 }
 
 .ion-border-bottom {
-    border-bottom: 1px solid rgb(171 174 188 / 50%);
+    border-bottom: 1px solid rgb(171 174 188 / 30%);
 }
 
 .redCustomBtn {
     background: var(--ion-color-primary, #FC5A5F);
     color: #ffffff;
-    font-size: 14px;
+    font-size: 12px;
     text-align: center;
     border-radius: 5px;
-    font-family: 'Spartan-medium';
+    font-family: 'Spartan-semibold';
 }
 
 .greenCustomBtn {
     background: var(--ion-color-tertiary, #1DBA20);
     color: #ffffff;
-    font-size: 14px;
+    font-size: 12px;
     text-align: center;
     border-radius: 5px;
-    font-family: 'Spartan-medium';
+    font-family: 'Spartan-semibold';
 }
 
 ion-card-subtitle {
@@ -322,8 +362,9 @@ ion-card-subtitle {
     display: flex;
     align-items: center;
     border-bottom: 2px solid rgb(171 174 188 / 50%);
-    font-family: 'Spartan-medium';
-    font-size: 14px
+    font-family: 'Spartan-semibold';
+    font-size: 13px;
+    color: var(--ion-color-secondary);
 }
 
 .listOfMenu li:nth-child(3) {

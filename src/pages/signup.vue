@@ -124,8 +124,8 @@
           <div class="ion-padding-bottom">
             <ion-button class="common-btn" size="large" type="submit" expand="block">Sign up and send request</ion-button>
           </div>
-          <div class="account grey-text">Already have an account?</div>
-          <div class="forgot-password lightred-text"><span class="cursor-pointer"><router-link to="/login">Login here</router-link></span></div>
+          <div class="account">Already have an account?</div>
+          <div class="lightred-text"><span class="cursor-pointer"><router-link to="/login">Login here</router-link></span></div>
         </ion-col>
       </ion-row>
     </ion-grid>

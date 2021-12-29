@@ -1,7 +1,7 @@
 <template>
   <ion-page>
     <!-- User -->
-    <ion-tabs>
+    <!-- <ion-tabs>
       <ion-router-outlet></ion-router-outlet>
       <ion-tab-bar slot="bottom">
         <ion-tab-button tab="tab1" href="/tabs/tab1">
@@ -29,10 +29,10 @@
           <ion-label>Setting</ion-label>
         </ion-tab-button>
       </ion-tab-bar>
-    </ion-tabs>
+    </ion-tabs> -->
   
   <!-- Admin -->
-  <!-- <ion-tabs>
+  <ion-tabs>
       <ion-router-outlet></ion-router-outlet>
       <ion-tab-bar slot="bottom">
         <ion-tab-button tab="tab1" href="/tabs/tab1">
@@ -60,7 +60,7 @@
           <ion-label>Setting</ion-label>
         </ion-tab-button>
       </ion-tab-bar>
-    </ion-tabs> -->
+    </ion-tabs>
   </ion-page>
 </template>
 
@@ -79,7 +79,7 @@ import { IonTabBar, IonTabButton, IonTabs, IonLabel, IonIcon, IonPage, IonRouter
        settingsSharp
     }
   }
-} 
+}
 
 /* Admin Start */
 /* import { homeOutline, personCircleOutline, addCircleSharp, logoWechat, settingsSharp } from 'ionicons/icons'; //Admin
@@ -105,10 +105,11 @@ export default {
 ion-tab-bar{
   --background: #fff;
     --color: #000;
-        box-shadow: 0px 0px 1px 2px #eeeeee;
+        box-shadow: 0px 0px 6px 2px #ffd5d5;
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
         border:none;
+        padding: 8px 8px 15px 8px;
 }
 .ion-page{
   background: #fff;
@@ -131,8 +132,8 @@ ion-icon{
 ion-card {
   box-shadow: 0px 0px 2px 2px #eeeeee;
   background: #fff;
-  padding: 5px 10px;
-  margin: 15px 10px;
+  padding: 12px 12px;
+  margin: 18px 0px;
 }
 .text-grey{
 color: var(--ion-color-medium);
@@ -141,7 +142,7 @@ color: var(--ion-color-medium);
 }
 .text-lightred {
   color: var(--ion-color-primary);
-  font-size: 12px;
+  font-size: 13px;
   font-family: 'Spartan-semibold';
   padding-bottom: 5px;
 }
@@ -153,13 +154,25 @@ color: var(--ion-color-medium);
 }
 .text-lightgrey {
   --color: var(--ion-color-medium,#ABAEBD);
+ font-size: 10px;
+  font-family: 'Spartan-semibold';
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-transform: none;
+    font-weight:100;
+    margin:0;
+}
+.requesttext-lightgrey {
+  color: var(--ion-color-medium,#ABAEBD);
  font-size: 11px;
   font-family: 'Spartan-semibold';
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     text-transform: none;
-    font-weight:100
+    font-weight:100;
+    margin:0;
 }
 /* .text-darkblue {
   color: var(--ion-color-secondary);
@@ -183,9 +196,14 @@ color: var(--ion-color-medium);
 }
 
 .plywood-invoice{
-      color: var(--ion-color-secondary);
+     color: var(--ion-color-secondary);
     font-size: 13px;
-    padding-bottom: 8px;
+    padding: 6px 5px 15px 5px;
+    font-family: 'Spartan-semibold';
+}
+.quantity-text{
+ color: var(--ion-color-secondary);
+    font-size: 10px;
     font-family: 'Spartan-semibold';
 }
 .doc-subtitle{
@@ -195,6 +213,6 @@ color: var(--ion-color-medium);
     overflow: unset;
     text-overflow: unset;
     text-transform: none;
-    font-family: 'Spartan-semibold';
+    /* font-family: 'Spartan-semibold'; */
 }
 </style>

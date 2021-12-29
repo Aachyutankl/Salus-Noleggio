@@ -6,7 +6,7 @@
             </ion-toolbar>
         </ion-header> -->
         <ion-content class="common-bg">
-<div class="brand-section">
+<div class="brand-section" style="height:50%">
     <svg xmlns="http://www.w3.org/2000/svg" width="100.087" height="30.626" viewBox="0 0 100.087 30.626">
   <g id="Raggruppa_73" data-name="Raggruppa 73" transform="translate(-150 -47.144)">
     <g id="Raggruppa_45" data-name="Raggruppa 45" transform="translate(52.659 -481.549)">
@@ -74,20 +74,20 @@
   </g>
 </svg>    
 </div>
-<div class="credentials login-section ion-padding">
+<div class="credentials login-section ion-padding" style="height:50%">
     <form h-100>
     <ion-grid h-100>
-      <ion-row color="primary" justify-content-center>
+      <ion-row color="primary" justify-content-center h-100>
         <ion-col size-xs="12">
           <div>
             <h3>Forgot password?</h3>
           </div>
-         <label class="choice">Enter the email address associated with your account</label>
+         <div class="choice ion-padding">Enter the email address associated with your account</div>
           <div padding>
                 <div class="custom-padding-vertical">
               <div class="dflex-border">
- <ion-icon :icon="mailOpenOutline" class="commonStyleIcon"></ion-icon>
-              <ion-input class="ion-padding-horizontal" name="name" type="text" placeholder="Email id" ngModel required></ion-input>
+              <ion-icon :icon="mailOpenOutline" class="commonStyleIcon"></ion-icon>
+              <ion-input class="ion-padding-horizontal" name="name" type="text" placeholder="Enter your email address" ngModel required></ion-input>
               </div>
           </div>
             

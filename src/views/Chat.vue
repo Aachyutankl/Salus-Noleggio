@@ -2,8 +2,9 @@
   <ion-page>
     <ion-content :fullscreen="true">
       <ExploreContainer name="Chat Page" />
-      <!-- List of Chat -->
-      <div class="chatAdminContainer ion-padding">
+      <div class="outerPadding">
+<!-- List of Chat -->
+      <!-- <div class="chatAdminContainer">
         <ion-card>
           <ion-row class="ion-align-items-center">
             <ion-col size="1.5" class="ion-text-center">
@@ -30,10 +31,10 @@
             </ion-col>
           </ion-row>
         </ion-card>
-      </div>
+      </div> -->
 
       <!-- Individual chat -->
-      <!-- <ion-row>
+       <ion-row>
         <ion-col size="9">
           <ion-card class="rose-bg">
             <ion-card-subtitle>
@@ -58,9 +59,11 @@
             </ion-card-subtitle>
           </ion-card>
         </ion-col>
-      </ion-row> -->
+      </ion-row>
+      
+      </div>
       <!-- text area -->
-      <!-- <div class="chatTextBox">
+      <div class="chatTextBox">
         <ion-row class="ion-align-items-center">
           <ion-col size="9.5">
             <ion-input
@@ -77,7 +80,7 @@
             <ion-icon :icon="arrowForward" class="arrowIcon"></ion-icon>
           </ion-col>
         </ion-row>
-      </div> -->
+      </div>
     </ion-content>
   </ion-page>
 </template>
@@ -105,6 +108,7 @@ export default {
 }
 .rose-bg {
   background: #f9eaee;
+  margin: 0px 0px 18px 0px;
 }
 
 .white-bg {
@@ -118,7 +122,7 @@ export default {
 }
 .chatDate::before {
   content: "";
-  background: var(--ion-color-medium);
+  background: rgb(171 174 188 / 50%);
   position: absolute;
   width: 30%;
   height: 1px;
@@ -127,7 +131,7 @@ export default {
 }
 .chatDate::after {
   content: "";
-  background: var(--ion-color-medium);
+  background: rgb(171 174 188 / 50%);
   position: absolute;
   width: 30%;
   height: 1px;

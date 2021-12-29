@@ -115,7 +115,7 @@
           <div class="ion-padding-bottom">
             <ion-button class="common-btn" size="large" type="submit" expand="block"><router-link to="/tabs/">Login</router-link></ion-button>
           </div>
-          <div class="account grey-text">Don’t have an account?</div>
+          <div class="account">Don’t have an account?</div>
           <div class="lightred-text"><span class="cursor-pointer"><router-link to="/signup">Sign up now</router-link></span></div>
         </ion-col>
       </ion-row>
@@ -143,6 +143,7 @@ export default {
 </script>
 <style>
 .forgot-password{
-  font-size: 12px !important;
+  font-size: 10px !important;
 }
+
 </style>

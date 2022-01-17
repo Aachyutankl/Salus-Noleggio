@@ -65,7 +65,7 @@
 </template>
 
 <script lang="ts">
-/* import { IonTabBar, IonTabButton, IonTabs, IonLabel, IonIcon, IonPage, IonRouterOutlet } from '@ionic/vue';
+import { IonTabBar, IonTabButton, IonTabs, IonLabel, IonIcon, IonPage, IonRouterOutlet } from '@ionic/vue';
  import { homeOutline, documentTextSharp, addCircleSharp, logoWechat, settingsSharp } from 'ionicons/icons'; //User
  export default {
   name: 'Tabs',
@@ -79,10 +79,10 @@
        settingsSharp
     }
   }
-} */
+}
 
 /* Admin Start */
-import { homeOutline, personCircleOutline, addCircleSharp, logoWechat, settingsSharp } from 'ionicons/icons'; //Admin
+/* import { homeOutline, personCircleOutline, addCircleSharp, logoWechat, settingsSharp } from 'ionicons/icons'; //Admin
 import { IonTabBar, IonTabButton, IonTabs, IonLabel, IonIcon, IonPage, IonRouterOutlet } from '@ionic/vue';
 export default {
   name: 'Tabs',
@@ -96,7 +96,7 @@ export default {
        settingsSharp
     }
   }
-}
+} */
 /* Admin End */
 
 </script>

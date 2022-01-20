@@ -70,13 +70,29 @@
 </svg>    
 </div>
 <div class="credentials login-section ion-padding">
-  <ion-row class="userAdmin">
+  <!-- <ion-row class="userAdmin">
     <ion-col offset="2" size="4" class="userAdminActive userAdminBorder">
       <span class="user">User</span>
     </ion-col>
-     <ion-col size="4" class="userAdminBorder"><span class="admin">Admin</span></ion-col>
-  </ion-row>
-    <form>
+     <ion-col size="4" class="userAdminBorder">
+       <span class="admin">Admin</span>
+     </ion-col>
+  </ion-row> -->
+
+
+<ion-tabs @ionTabsWillChange="beforeTabChange" @ionTabsDidChange="afterTabChange" style="position:unset !important">
+      <ion-tab-bar slot="top" class="userAdmin">
+        <ion-tab-button class="userAdminBorder" tab="loginUserPage" href="/login/loginUserPage">
+          <ion-label>User</ion-label>
+        </ion-tab-button>
+  
+        <ion-tab-button class="userAdminBorder" tab="loginAdminPage" href="/login/loginAdminPage">
+          <ion-label>Admin</ion-label>
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-tabs>
+
+    <!-- <form>
     <ion-grid>
       <ion-row color="primary" justify-content-center>
         <ion-col size-xs="12">
@@ -120,18 +136,19 @@
         </ion-col>
       </ion-row>
     </ion-grid>
-  </form>
+  </form> -->
 </div>
         </ion-content>
     </ion-page>
 </template>
 
 <script>
-import { IonPage, IonContent} from '@ionic/vue';
+// import { defineComponent } from 'vue';
+import { IonPage, IonContent, IonTabBar, IonTabButton, IonTabs} from '@ionic/vue';
 import {mailOpenOutline, lockClosedOutline, eyeOutline} from 'ionicons/icons'
-export default {
-    components: { IonPage,IonContent},
-    layout:'user',
+export default{
+    components: { IonPage,IonContent,IonTabBar, IonTabButton, IonTabs},
+   name: 'login',
     setup() {
     return {
       mailOpenOutline,

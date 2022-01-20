@@ -76,12 +76,12 @@
 </svg>    
 </div>
 <div class="credentials login-section ion-padding">
- <ion-row class="userAdmin">
-    <ion-col offset="2" size="4" class="userAdminActive userAdminBorder">
+ <!--<ion-row class="userAdmin" style="justify-content:center">
+    <ion-col size="5" class="userAdminActive userAdminBorder">
       <span class="user">User</span>
     </ion-col>
-     <ion-col size="4" class="userAdminBorder"><span class="admin">Admin</span></ion-col>
-  </ion-row>
+      <ion-col size="4" class="userAdminBorder"><span class="admin">Admin</span></ion-col> 
+  </ion-row>-->
     <form h-100>
     <ion-grid h-100>
       <ion-row color="primary" justify-content-center>

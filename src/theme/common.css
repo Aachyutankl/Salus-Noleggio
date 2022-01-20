@@ -90,15 +90,25 @@ html.ios {
 
 .userAdmin {
     text-align: center;
-    color: var( --ion-color-secondary);
+    --color: var( --ion-color-secondary) !important;
     width: 70%;
     margin: auto;
     font-family: 'Spartan-medium';
     font-size: 15px;
+    box-shadow: none;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+    border: none;
+    padding: 0 !important;
 }
 
 .userAdminBorder {
     border-bottom: 1px solid rgb(252 90 95 / 30%);
+}
+
+.userAdmin .tab-selected {
+    border-bottom: 2px solid var(--ion-color-primary);
+    color: var( --ion-color-secondary) !important
 }
 
 .userAdminActive {

@@ -13,6 +13,20 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/login',
     component: login,
+    children: [
+      {
+        path: '',
+        redirect: '/login/loginUserPage'
+      },
+      {
+        path: 'loginUserPage',
+        component: () => import('@/pages/loginUserPage.vue')
+      },
+      {
+        path: 'loginAdminPage',
+        component: () => import('@/pages/loginAdminPage.vue')
+      },
+    ]
   },
   {
     path: '/signup',

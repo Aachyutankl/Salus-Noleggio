@@ -73,7 +73,21 @@ const routes: Array<RouteRecordRaw> = [
       },
       {
         path: 'tab2',
-        component: () => import('@/views/AdminUser.vue')
+        component: () => import('@/views/AdminUser.vue'),
+        children: [
+          {
+            path: '',
+            redirect: '/tabs/tab2/userPageTab'
+          },
+          {
+            path: 'userPageTab',
+            component: () => import('@/views/userPageTab.vue')
+          },
+          {
+            path: 'approvalPageTab',
+            component: () => import('@/views/approvalPageTab.vue')
+          },
+        ]
       },
       {
         path: 'tab3',

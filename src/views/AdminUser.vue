@@ -4,99 +4,31 @@
     <ion-content :fullscreen="true">
       <ExploreContainer name="Document page" />
       <div class="outerPadding">
-
-        <!-- User tab content -->
-        <div class="userApprovalTab">
-            <ion-row class="ion-align-items-center">
-              <ion-col size="6">
-                <div class="userTab">User</div>
-              </ion-col>
-              <ion-col size="6">
-                <div class="approvalTab d-flex activeTab">
-                  Approvals &nbsp;<span class="redCircle"> 02</span>
-                </div>
-              </ion-col>
-            </ion-row>
-          </div>
-        <div class="listOfContainer">          
-          <!-- Default Searchbar -->
-          <ion-searchbar></ion-searchbar>
-          <ion-row class="ion-border-bottom ion-align-items-center">
-            <ion-col size="11" class="text-darkblue">Company&nbsp;01</ion-col>
-            <ion-col size="1" class="ion-text-center"><ion-icon class="icon-grey" :icon="chevronForwardOutline"></ion-icon
-            ></ion-col>
-          </ion-row>
-          <ion-row class="ion-border-bottom ion-align-items-center">
-            <ion-col size="11" class="text-darkblue">Company&nbsp;02</ion-col>
-            <ion-col size="1" class="ion-text-center"><ion-icon class="icon-grey" :icon="chevronForwardOutline"></ion-icon
-            ></ion-col>
-          </ion-row>
-          <ion-row class="ion-border-bottom ion-align-items-center">
-            <ion-col size="11" class="text-darkblue">Company&nbsp;03</ion-col>
-           <ion-col size="1" class="ion-text-center"><ion-icon class="icon-grey" :icon="chevronForwardOutline"></ion-icon
-            ></ion-col>
-          </ion-row>
-          <ion-row class="ion-border-bottom ion-align-items-center">
-            <ion-col size="11" class="text-darkblue">Company&nbsp;04</ion-col>
-           <ion-col size="1" class="ion-text-center"><ion-icon class="icon-grey" :icon="chevronForwardOutline"></ion-icon
-            ></ion-col>
-          </ion-row>
-          <ion-row class="ion-border-bottom ion-align-items-center">
-            <ion-col size="11" class="text-darkblue">Company&nbsp;05</ion-col>
-            <ion-col size="1" class="ion-text-center"><ion-icon class="icon-grey" :icon="chevronForwardOutline"></ion-icon
-            ></ion-col>
-          </ion-row>
-          <ion-row class="ion-border-bottom ion-align-items-center">
-            <ion-col size="11" class="text-darkblue">Company&nbsp;06</ion-col>
-           <ion-col size="1" class="ion-text-center"><ion-icon class="icon-grey" :icon="chevronForwardOutline"></ion-icon
-            ></ion-col>
-          </ion-row>
-        </div>
-
-
-<!-- Approval tab content -->
-        <div class="approvalContainer">
-          <ion-card>
-            <ion-row class="ion-align-items-center">
-              <ion-col size="5">
-                <div class="text-darkblue">Company 01</div>
-              </ion-col>
-              <ion-col size="3.5" class="ion-text-center">
-                <div class="redCustomBtn customPadding">Reject</div>
-              </ion-col>
-              <ion-col size="3.5" class="ion-text-center">
-                <div class="greenCustomBtn customPadding">Accept</div>
-              </ion-col>
-            </ion-row>
-          </ion-card>
-          <ion-card>
-            <ion-row class="ion-align-items-center">
-              <ion-col size="5">
-                <div class="text-darkblue">Company 01</div>
-              </ion-col>
-              <ion-col size="3.5" class="ion-text-center">
-                <div class="redCustomBtn customPadding">Reject</div>
-              </ion-col>
-              <ion-col size="3.5" class="ion-text-center">
-                <div class="greenCustomBtn customPadding">Accept</div>
-              </ion-col>
-            </ion-row>
-          </ion-card>
-        </div>
+        <ion-tabs style="position: unset !important;">
+          <ion-tab-bar slot="top" class="userApprovalTab">
+            <ion-tab-button class="activeTab" tab="userPageTab" href="userPageTab">
+              <ion-label>User</ion-label>
+            </ion-tab-button>
+      
+            <ion-tab-button tab="approvalPageTab" href="approvalPageTab">
+              <ion-label class="d-flex">Approval &nbsp;<span class="redCircle"> 02</span></ion-label>
+            </ion-tab-button>
+          </ion-tab-bar>
+        </ion-tabs>
       </div>
     </ion-content>
   </ion-page>
 </template>
 
 <script lang="ts">
-import { IonPage, IonContent, IonSearchbar } from "@ionic/vue";
+import { IonPage, IonContent, IonTabBar, IonTabButton, IonTabs } from "@ionic/vue";
 
 import ExploreContainer from "@/components/ExploreContainer.vue";
 import { chevronForwardOutline, calendar, personCircle } from "ionicons/icons";
 
 export default {
   name: "Document",
-  components: { ExploreContainer, IonContent, IonPage, IonSearchbar },
+  components: { ExploreContainer, IonContent, IonPage, IonTabBar, IonTabButton, IonTabs },
   setup() {
     return {
       chevronForwardOutline,
@@ -118,13 +50,13 @@ export default {
 /* Admin */
 
 .userApprovalTab{
-  background: var(--ion-color-primary);
+  --background: var(--ion-color-primary);
   border-radius: 5px;
   color: #fff;
   text-align: center;
   font-family: 'Spartan-semibold';
   font-size: 14px;
- 
+ padding:10px !important
 }
 .activeTab{
   background: #fff;
